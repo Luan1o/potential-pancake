@@ -1,0 +1,11 @@
+let pontos = 0; // Pontuação inicial
+
+// Pegando os elementos do HTML
+const botao = document.getElementById("botao");
+const pontuacao = document.getElementById("pontuacao");
+
+// Função para aumentar a pontuação ao clicar no botão
+botao.addEventListener("click", () => {
+    pontos++; // Adiciona 1 ponto
+    pontuacao.textContent = pontos; // Atualiza o texto
+});
